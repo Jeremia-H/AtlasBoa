@@ -16,9 +16,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          ref: ${{ github.ref }}
-          token: ${{ secrets.RUNNER_SECRET }}
 
       - name: Get changed files
         id: changed-files
